@@ -1,0 +1,23 @@
+{
+
+  "name":"Spoiler Alert",
+  "description":"Hides any possible spoiler of any movie",
+  "version":"2.1",
+  "manifest_version":2,
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "tabs", "<all_urls>",
+    "storage"
+  ],
+
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["jquery.js","popup.js"]
+  }]
+
+}
+
+  
