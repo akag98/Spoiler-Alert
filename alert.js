@@ -26,15 +26,6 @@ function redirect(){
 	chrome.storage.sync.set({'name':array}, function() {
 		//console.log(array);
 	});
-
-    
-    //IMPORTANT
-	// console.log("Inside background script", $input.value);
-	// chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-	// 	chrome.tabs.sendMessage(tabs[0].id, {greeting: $input.value}, function(response) {
-	// 		console.log(response.farewell);
-	// 	});
-	//   });
 }
 
 
